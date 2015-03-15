@@ -18,6 +18,8 @@ This plugin makes it easy for WordPress users to do the same for Terry Pratchett
   
 Inspired by <a href="http://www.reddit.com/r/bestof/comments/2yyop7/rdiscworld_redditors_with_web_servers_start/">this reddit post</a>, <a href="http://boingboing.net/2015/03/15/sending-terry-pratchett-home-w.html">boingboing's report</a>, and the <a href="http://www.gnuterrypratchett.com/">GNU Terry Pratchett</a> website.
 
+Contributions welcome at the <a href="https://github.com/nickcernis/gnu-terry-pratchett">repo on GitHub</a>. 
+
 == Installation ==
 
 1. Unzip and upload the `gnu-terry-pratchett` folder to your `/wp-content/plugins/` directory.
