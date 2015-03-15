@@ -3,7 +3,7 @@ Contributors: Nick Cernis
 Tags: terry-pratchett, http-headers
 Requires at least: 2.8.0
 Tested up to: 4.1.1
-Stable tag: trunk
+Stable tag: 0.1.1
 License: GPLv2+
 
 Adds an X-Clacks-Overhead header with 'GNU Terry Pratchett' on all non-admin pages.
