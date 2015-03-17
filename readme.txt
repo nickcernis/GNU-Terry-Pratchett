@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: Nick Cernis
+Contributors: modernnerd
 Tags: terry-pratchett, http-headers
 Requires at least: 2.8.0
 Tested up to: 4.1.1
@@ -12,20 +12,20 @@ Adds an X-Clacks-Overhead header with 'GNU Terry Pratchett' on all non-admin pag
 
 The GNU Terry Pratchett plugin transmits a special "X-Clacks-Overhead" header reading, “GNU Terry Pratchett” so that Terry’s name is whispered forevermore in the Internet’s “overhead”.
 
-In Pratchett’s “Going Postal”, workers who die in the line of duty have their names transmitted up and down the book’s telegraph system as a tribute.
+In Pratchett’s “Going Postal”, workers who die in the line of duty have their names transmitted up and down the Discworld’s telegraph system as a tribute.
 
 This plugin makes it easy for WordPress users to do the same for Terry Pratchett, without having to modify their server configuration.
   
 Inspired by <a href="http://www.reddit.com/r/bestof/comments/2yyop7/rdiscworld_redditors_with_web_servers_start/">this reddit post</a>, <a href="http://boingboing.net/2015/03/15/sending-terry-pratchett-home-w.html">boingboing's report</a>, and the <a href="http://www.gnuterrypratchett.com/">GNU Terry Pratchett</a> website.
 
-Contributions welcome at the <a href="https://github.com/nickcernis/gnu-terry-pratchett">repo on GitHub</a>. 
+Contributions welcome at the <a href="https://github.com/nickcernis/gnu-terry-pratchett">GitHub repo</a>. 
 
 == Installation ==
 
 1. Unzip and upload the `gnu-terry-pratchett` folder to your `/wp-content/plugins/` directory.
 1. Activate the plugin on the WordPress 'Plugins' page.
 
-There is no settings page. You can use Chrome's Network tab or a site such as the <a href="http://tools.seobook.com/server-header-checker/">Server Header Checker</a> to be sure that the header is appearing correctly for your WordPress site.  
+There is no settings page. To check that the header is appearing for your site, you can use your terminal (`curl -I example.com`), Chrome's Network tab, or a site such as <a href="http://tools.seobook.com/server-header-checker/">Server Header Checker</a>.  
 
 == Frequently Asked Questions ==
 
