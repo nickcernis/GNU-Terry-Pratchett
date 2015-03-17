@@ -10,7 +10,7 @@ Adds an X-Clacks-Overhead header with 'GNU Terry Pratchett' on all non-admin pag
 
 == Description ==
 
-The GNU Terry Pratchett plugin transmits a special "X-Clacks-Overhead" header reading, “GNU Terry Pratchett” so that Terry’s name is whispered forevermore in the Internet’s “overhead”.
+The GNU Terry Pratchett plugin transmits an "X-Clacks-Overhead" header reading, “GNU Terry Pratchett” so that Terry’s name is whispered forevermore in the Internet’s “overhead”.
 
 In Pratchett’s “Going Postal”, workers who die in the line of duty have their names transmitted up and down the Discworld’s telegraph system as a tribute.
 
