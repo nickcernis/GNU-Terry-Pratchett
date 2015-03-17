@@ -6,7 +6,7 @@ Tested up to: 4.1.1
 Stable tag: trunk
 License: GPLv2+
 
-Adds an X-Clacks-Overhead header with 'GNU Terry Pratchett' on all non-admin pages.
+Add an X-Clacks-Overhead header with 'GNU Terry Pratchett' to all your non-admin pages.
 
 == Description ==
 
