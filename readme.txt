@@ -17,11 +17,11 @@ In Pratchett’s “Going Postal”, workers who die in the line of duty have th
 This plugin makes it easy for WordPress users to do the same for Terry Pratchett, without having to modify their server configuration.
 
 = Using a WordPress caching plugin? =
-You'll need to use one of the other methods for adding the header instead of this plugin, unfortunately.
+You'll need to use one of the other methods for adding the header. With plugins that use a static page caches, the cache will be served before this plugin has a chance to add the header, unfortunately. 
 
-See http://www.gnuterrypratchett.com/ for more.
+See http://www.gnuterrypratchett.com/ for more ways to add the header to your site.
 
-= Setup =
+= How to check it's working =
 There is no settings page. Check that the header is appearing for your site by using your terminal (`curl -I example.com`), Chrome's Network tab, or the <a href="http://tools.seobook.com/server-header-checker/">Server Header Checker</a>.  
   
 = Credits and contributions =  
