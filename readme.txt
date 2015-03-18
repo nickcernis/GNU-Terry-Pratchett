@@ -16,7 +16,7 @@ In Pratchett’s “Going Postal”, workers who die in the line of duty have th
 
 This plugin makes it easy for WordPress users to do the same for Terry Pratchett, without having to modify their server configuration.
 
-There is no settings page. Check that the header is appearing for your site by using your terminal (`curl -I example.com`), Chrome's Network tab, or a site such as <a href="http://tools.seobook.com/server-header-checker/">Server Header Checker</a>.  
+There is no settings page. Check that the header is appearing for your site by using your terminal (`curl -I example.com`), Chrome's Network tab, or the <a href="http://tools.seobook.com/server-header-checker/">Server Header Checker</a>.  
   
 Inspired by <a href="http://www.reddit.com/r/bestof/comments/2yyop7/rdiscworld_redditors_with_web_servers_start/">this reddit post</a>, <a href="http://boingboing.net/2015/03/15/sending-terry-pratchett-home-w.html">boingboing's report</a>, and the <a href="http://www.gnuterrypratchett.com/">GNU Terry Pratchett</a> website.
 
