@@ -18,10 +18,8 @@
  */
 function gnu_terry_pratchett_header( $headers ) {
 
-	if ( ! is_admin() ) {
-		$headers['X-Clacks-Overhead'] = 'GNU Terry Pratchett';
-	}
-
+	$headers['X-Clacks-Overhead'] = 'GNU Terry Pratchett';
+	
 	return $headers;
 
 }
