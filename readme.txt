@@ -6,7 +6,7 @@ Tested up to: 4.1.1
 Stable tag: trunk
 License: GPLv2+
 
-Add an X-Clacks-Overhead header with 'GNU Terry Pratchett' to all your non-admin pages.
+Add an X-Clacks-Overhead header with “GNU Terry Pratchett” to all non-admin pages.
 
 == Description ==
 
@@ -16,15 +16,30 @@ In Pratchett’s “Going Postal”, workers who die in the line of duty have th
 
 This plugin makes it easy for WordPress users to do the same for Terry Pratchett, without having to modify their server configuration.
 
-= Using a WordPress caching plugin? =
-For now, you'll need to use one of the other methods for adding the header. With plugins that use a static page cache, the cache will be served before this plugin has a chance to add the header, unfortunately. 
+= The GNU Terry Pratchett headers =
 
-See http://www.gnuterrypratchett.com/ for more ways to add the header to your site.
+The plugin adds the GNU Terry Pratchett header tag in three ways:
+  
+1. As an HTTP header (sent only if you don't use a WordPress caching plugin). 
+2. As a meta tag in your HTML with the http-equiv attribute.
+3. As an additional header tag for all outgoing email that WordPress sends.
 
-I'll update the plugin if a workaround is available so that it works with caching plugins too.
+= How to check it’s working =
+There is no settings page. Check that the HTTP header is appearing for your site by:
 
-= How to check it's working =
-There is no settings page. Check that the header is appearing for your site by using your terminal (`curl -I example.com`), Chrome's Network tab, or the <a href="http://tools.seobook.com/server-header-checker/">Server Header Checker</a>.  
+1. Using your terminal (`curl -I example.com`)
+2. Using Chrome’s Network tab.
+3. Using the <a href="http://tools.seobook.com/server-header-checker/">Server Header Checker</a>.
+
+Note that the HTTP header is only sent if you don't use a page caching plugin. If you'd like to send the HTTP header and continue to use a caching plugin, you'll need to add it at the server level. See http://www.gnuterrypratchett.com/ for options. 
+  
+You can check that the meta tag is visible by viewing your site's HTML source and searching for “GNU Terry Pratchett”.
+
+To confirm that WordPress is sending email with the special header, you can:
+ 
+1. Create a new WordPress user from Users > Add New.
+2. Be sure to use an email address you can easily check, and tick “Send this password to the new user by email”.
+3. In your email or webmail client, view the raw source of the welcome email that WordPress sends you. You should see “GNU Terry Pratchett” in the headers. 
   
 = Credits and contributions =  
 Inspired by <a href="http://www.reddit.com/r/bestof/comments/2yyop7/rdiscworld_redditors_with_web_servers_start/">this reddit post</a>, <a href="http://boingboing.net/2015/03/15/sending-terry-pratchett-home-w.html">boingboing's report</a>, and the <a href="http://www.gnuterrypratchett.com/">GNU Terry Pratchett</a> website.
@@ -34,7 +49,7 @@ Contributions welcome at the <a href="https://github.com/nickcernis/gnu-terry-pr
 == Installation ==
 
 1. Unzip and upload the `gnu-terry-pratchett` folder to your `/wp-content/plugins/` directory.
-1. Activate the plugin on the WordPress 'Plugins' page.
+2. Activate the plugin on the WordPress 'Plugins' page.
 
 There is no settings page. To check that the header is appearing for your site, you can use your terminal (`curl -I example.com`), Chrome's Network tab, or a site such as <a href="http://tools.seobook.com/server-header-checker/">Server Header Checker</a>.  
 
@@ -52,5 +67,15 @@ In Going Postal, the G means that the message should be passed on, the N means �
 
 == Changelog ==
 
-= 0.1.0 =
+= 0.2.0 =
+* Add X-Clacks-Overhead meta tag to site HTML.
+* Add X-Clacks-Overhead header to outgoing email sent by wp_mail().
+
+= 0.1.2 =
 * Initial release.
+
+== Upgrade Notice ==
+
+= 0.2.0 =
+This version now sends the “GNU Terry Pratchett” header in outgoing WP emails, and adds the special meta tag to your HTML too.
+
