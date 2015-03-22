@@ -18,7 +18,7 @@ This plugin makes it easy for WordPress users to do the same for Terry Pratchett
 
 = The GNU Terry Pratchett headers =
 
-The plugin adds the GNU Terry Pratchett header tag in three ways:
+The plugin adds the GNU Terry Pratchett header in three ways:
   
 1. As an HTTP header (sent only if you don't use a WordPress caching plugin). 
 2. As a meta tag in your HTML with the http-equiv attribute.
