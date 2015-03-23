@@ -24,7 +24,7 @@ The plugin adds the GNU Terry Pratchett header in three ways:
 2. As a meta tag in your HTML with the http-equiv attribute.
 3. As an additional header tag for all outgoing email that WordPress sends.
 
-= How to check it’s working =
+= Checking the HTTP header is sent =
 There is no settings page. There are several ways to check that the HTTP header is appearing for your site:
 
 1. With your terminal (`curl -I example.com`)
@@ -34,7 +34,12 @@ There is no settings page. There are several ways to check that the HTTP header 
 
 Note that the HTTP header is only sent if you don't use a page caching plugin. If you'd like to send the HTTP header and continue to use a caching plugin, you'll need to add it at the server level. See http://www.gnuterrypratchett.com/ for options. 
   
-You can check that the meta tag is visible by viewing your site's HTML source and searching for “GNU Terry Pratchett”. The <a href="https://chrome.google.com/webstore/detail/clacks-overhead-gnu-terry/lnndfmobdoobjfcalkmfojmanbeoegab">Clacks Overhead plugin</a> for Chrome and the <a href="https://addons.mozilla.org/en-US/firefox/addon/gnu_terry_pratchett/">GNU Terry Pratchett extension</a> for Firefox both light up when they detect the HTML meta tag or HTTP header.
+= Checking the meta tag is being added =  
+You can check that the meta tag is visible by viewing your site's HTML source and searching for “GNU Terry Pratchett”.
+
+The <a href="https://chrome.google.com/webstore/detail/clacks-overhead-gnu-terry/lnndfmobdoobjfcalkmfojmanbeoegab">Clacks Overhead plugin</a> for Chrome and the <a href="https://addons.mozilla.org/en-US/firefox/addon/gnu_terry_pratchett/">GNU Terry Pratchett extension</a> for Firefox both light up when they detect the HTML meta tag or HTTP header.
+
+= Checking the email header is sent =
 
 To confirm that WordPress is sending email with the special header, you can:
  
