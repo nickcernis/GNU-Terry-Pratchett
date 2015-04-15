@@ -19,7 +19,7 @@
 function gnu_terry_pratchett_header( $headers ) {
 
 	$headers['X-Clacks-Overhead'] = 'GNU Terry Pratchett';
-	
+
 	return $headers;
 
 }
@@ -47,13 +47,14 @@ add_action( 'wp_head', 'gnu_terry_pratchett_meta' );
  *
  * @param $args
  *
- * @return array of mail arguments
+ * @return array Array of mail arguments
  */
 function gnu_terry_pratchett_mail_header( $args ) {
 
-	$args['headers'] .= "X-Clacks-Overhead: GNU Terry Pratchett \n";
+	$args['headers'][] = "X-Clacks-Overhead: GNU Terry Pratchett";
 
 	return $args;
+
 }
 
 add_filter( 'wp_mail', 'gnu_terry_pratchett_mail_header' );
