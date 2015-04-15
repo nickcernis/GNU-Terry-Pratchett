@@ -36,7 +36,9 @@ add_filter( 'wp_headers', 'gnu_terry_pratchett_header' );
  *
  */
 function gnu_terry_pratchett_meta() {
+
 	echo '<meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />';
+
 }
 
 add_action( 'wp_head', 'gnu_terry_pratchett_meta' );
