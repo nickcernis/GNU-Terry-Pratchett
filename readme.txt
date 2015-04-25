@@ -73,8 +73,11 @@ In Going Postal, the G means that the message should be passed on, the N means â
 
 == Changelog ==
 
+= 0.2.2 =
+* Correct email header issue affecting Contact Form 7.
+
 = 0.2.1 =
-Fix issue where email header could break outgoing mail.
+* Fix issue where email header could break outgoing mail.
 
 = 0.2.0 =
 * Add X-Clacks-Overhead meta tag to site HTML.
