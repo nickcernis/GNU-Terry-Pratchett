@@ -53,7 +53,13 @@ add_action( 'wp_head', 'gnu_terry_pratchett_meta' );
  */
 function gnu_terry_pratchett_mail_header( $args ) {
 
-	$args['headers'][] = "X-Clacks-Overhead: GNU Terry Pratchett";
+	if ( is_array( $args['headers'] ) || empty( $args['headers'] ) ) {
+		$args['headers'][] = "X-Clacks-Overhead: GNU Terry Pratchett";
+	}
+
+	if ( is_string( $args['headers'] ) ) {
+		$args['headers'] .= "X-Clacks-Overhead: GNU Terry Pratchett\n";
+	}
 
 	return $args;
 
