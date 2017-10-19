@@ -7,13 +7,14 @@
  * Author: Nick Cernis
  * Author URI: http://twitter.com/nickcernis/
  * License: GPLv2+
+ *
+ * @package gnu-terry-pratchett
  */
 
 /**
- * Add X-Clacks-Overhead HTTP header
+ * Add X-Clacks-Overhead HTTP header.
  *
- * @param $headers
- *
+ * @param string $headers Default headers.
  * @return array The modified list of headers.
  */
 function gnu_terry_pratchett_header( $headers ) {
@@ -28,12 +29,11 @@ add_filter( 'wp_headers', 'gnu_terry_pratchett_header' );
 
 
 /**
- * Add meta tag for good measure
+ * Add meta tag for good measure.
  *
  * This isn't equivalent to setting an HTTP header, but at least the plugin will have
  * some effect if the site uses a caching plugin. The wp_headers filter never kicks
  * in if page caching is active, you see.
- *
  */
 function gnu_terry_pratchett_meta() {
 
@@ -45,16 +45,15 @@ add_action( 'wp_head', 'gnu_terry_pratchett_meta' );
 
 
 /**
- * Add header to outgoing mail sent by the wp_mail function
+ * Add header to outgoing mail sent by the wp_mail function.
  *
- * @param $args
- *
- * @return array Array of mail arguments
+ * @param array|string $args The mail arguments.
+ * @return array Array of mail arguments.
  */
 function gnu_terry_pratchett_mail_header( $args ) {
 
 	if ( is_array( $args['headers'] ) || empty( $args['headers'] ) ) {
-		$args['headers'][] = "X-Clacks-Overhead: GNU Terry Pratchett";
+		$args['headers'][] = 'X-Clacks-Overhead: GNU Terry Pratchett';
 	}
 
 	if ( is_string( $args['headers'] ) ) {
