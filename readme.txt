@@ -73,6 +73,9 @@ In Going Postal, the G means that the message should be passed on, the N means â
 
 == Changelog ==
 
+= 0.2.3 =
+* Added icon. Artwork from The Grand Trunk Semaphore Company 3p Stamp, copyright Discworld Emporium.
+
 = 0.2.2 =
 * Correct email header issue affecting Contact Form 7.
 
