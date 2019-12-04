@@ -1,16 +1,17 @@
 <?php
 /**
- * Plugin Name: GNU Terry Pratchett
- * Version: 0.2.3
- * Plugin URI: https://github.com/nickcernis/gnu-terry-pratchett
- * Description: Adds an X-Clacks-Overhead HTTP header set to 'GNU Terry Pratchett' on all non-admin pages.
- * Author: Nick Cernis
- * Author URI: http://twitter.com/nickcernis/
- * License: GPLv2+
- *
- * @package gnu-terry-pratchett
- */
+* Plugin Name: GNU Terry Pratchett
+* Version: 0.2.3
+* Plugin URI: https://github.com/nickcernis/gnu-terry-pratchett
+* Description: Adds an X-Clacks-Overhead HTTP header set to 'GNU Terry Pratchett' on all non-admin pages.
+* Author: Nick Cernis
+* Author URI: http://twitter.com/nickcernis/
+* License: GPLv2+
+*
+* @package gnu-terry-pratchett
+*/
 
+add_filter( 'wp_headers', 'gnu_terry_pratchett_header' );
 /**
  * Add X-Clacks-Overhead HTTP header.
  *
@@ -18,16 +19,12 @@
  * @return array The modified list of headers.
  */
 function gnu_terry_pratchett_header( $headers ) {
-
 	$headers['X-Clacks-Overhead'] = 'GNU Terry Pratchett';
 
 	return $headers;
-
 }
 
-add_filter( 'wp_headers', 'gnu_terry_pratchett_header' );
-
-
+add_action( 'wp_head', 'gnu_terry_pratchett_meta' );
 /**
  * Add meta tag for good measure.
  *
@@ -36,9 +33,5 @@ add_filter( 'wp_headers', 'gnu_terry_pratchett_header' );
  * in if page caching is active, you see.
  */
 function gnu_terry_pratchett_meta() {
-
 	echo '<meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />';
-
 }
-
-add_action( 'wp_head', 'gnu_terry_pratchett_meta' );
