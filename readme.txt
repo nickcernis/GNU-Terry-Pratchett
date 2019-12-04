@@ -18,11 +18,10 @@ This plugin makes it easy for WordPress users to do the same for Terry Pratchett
 
 = The GNU Terry Pratchett headers =
 
-The plugin adds the GNU Terry Pratchett header in three ways:
+The plugin adds the GNU Terry Pratchett header in two ways:
 
 1. As an HTTP header (sent only if you don't use a WordPress caching plugin).
 2. As a meta tag in your HTML with the http-equiv attribute.
-3. As an additional header tag for all outgoing email that WordPress sends.
 
 = Checking the HTTP header is sent =
 There is no settings page. There are several ways to check that the HTTP header is appearing for your site:
@@ -38,14 +37,6 @@ Note that the HTTP header is only sent if you don't use a page caching plugin. I
 You can check that the meta tag is visible by viewing your site's HTML source and searching for “GNU Terry Pratchett”.
 
 The <a href="https://chrome.google.com/webstore/detail/clacks-overhead-gnu-terry/lnndfmobdoobjfcalkmfojmanbeoegab">Clacks Overhead plugin</a> for Chrome and the <a href="https://addons.mozilla.org/en-US/firefox/addon/gnu_terry_pratchett/">GNU Terry Pratchett extension</a> for Firefox both light up when they detect the HTML meta tag or HTTP header.
-
-= Checking the email header is sent =
-
-To confirm that WordPress is sending email with the special header, you can:
-
-1. Create a new WordPress user from Users > Add New.
-2. Be sure to use an email address you can easily check, and tick “Send this password to the new user by email”.
-3. In your email or webmail client, view the raw source of the welcome email that WordPress sends you. You should see “GNU Terry Pratchett” in the headers.
 
 = Credits and contributions =
 Inspired by <a href="http://www.reddit.com/r/bestof/comments/2yyop7/rdiscworld_redditors_with_web_servers_start/">this reddit post</a>, <a href="http://boingboing.net/2015/03/15/sending-terry-pratchett-home-w.html">boingboing's report</a>, and the <a href="http://www.gnuterrypratchett.com/">GNU Terry Pratchett</a> website.
