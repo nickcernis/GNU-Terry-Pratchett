@@ -64,6 +64,9 @@ In Going Postal, the G means that the message should be passed on, the N means â
 
 == Changelog ==
 
+= 0.3.0 =
+* Removed mail header filtering. This was causing issues with WordPress site mail and plugins.
+
 = 0.2.3 =
 * Added icon. Artwork from The Grand Trunk Semaphore Company 3p Stamp, copyright Discworld Emporium.
 
