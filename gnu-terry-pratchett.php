@@ -7,6 +7,7 @@
 * Author: Nick Cernis
 * Author URI: http://twitter.com/nickcernis/
 * License: GPLv2+
+* Text Domain: gnu-terry-pratchett
 *
 * @package gnu-terry-pratchett
 */
