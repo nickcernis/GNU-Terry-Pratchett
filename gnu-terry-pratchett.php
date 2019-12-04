@@ -42,26 +42,3 @@ function gnu_terry_pratchett_meta() {
 }
 
 add_action( 'wp_head', 'gnu_terry_pratchett_meta' );
-
-
-/**
- * Add header to outgoing mail sent by the wp_mail function.
- *
- * @param array|string $args The mail arguments.
- * @return array Array of mail arguments.
- */
-function gnu_terry_pratchett_mail_header( $args ) {
-
-	if ( is_array( $args['headers'] ) || empty( $args['headers'] ) ) {
-		$args['headers'][] = 'X-Clacks-Overhead: GNU Terry Pratchett';
-	}
-
-	if ( is_string( $args['headers'] ) ) {
-		$args['headers'] .= "X-Clacks-Overhead: GNU Terry Pratchett\n";
-	}
-
-	return $args;
-
-}
-
-add_filter( 'wp_mail', 'gnu_terry_pratchett_mail_header' );
