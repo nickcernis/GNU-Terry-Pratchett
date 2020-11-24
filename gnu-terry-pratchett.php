@@ -16,7 +16,7 @@ add_filter( 'wp_headers', 'gnu_terry_pratchett_header' );
 /**
  * Add X-Clacks-Overhead HTTP header.
  *
- * @param string $headers Default headers.
+ * @param array $headers Default headers.
  * @return array The modified list of headers.
  */
 function gnu_terry_pratchett_header( $headers ) {
