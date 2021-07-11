@@ -20,7 +20,7 @@ This plugin makes it easy for WordPress users to do the same for Terry Pratchett
 
 The plugin adds the GNU Terry Pratchett header in two ways:
 
-1. As an HTTP header (sent only if you don't use a WordPress caching plugin).
+1. As an HTTP header (if you don't use a WordPress page caching plugin).
 2. As a meta tag in your HTML with the http-equiv attribute.
 
 = Checking the HTTP header is sent =
@@ -31,7 +31,7 @@ There is no settings page. There are several ways to check that the HTTP header 
 3. With the <a href="https://chrome.google.com/webstore/detail/clacks-overhead-gnu-terry/lnndfmobdoobjfcalkmfojmanbeoegab">Clacks Overhead</a> Chrome plugin or the <a href="https://addons.mozilla.org/en-US/firefox/addon/gnu_terry_pratchett/">GNU Terry Pratchett Firefox extension</a>.
 4. Using the <a href="http://tools.seobook.com/server-header-checker/">Server Header Checker</a>.
 
-Note that the HTTP header is only sent if you don't use a page caching plugin. If you'd like to send the HTTP header and continue to use a caching plugin, you'll need to add it at the server level. See http://www.gnuterrypratchett.com/ for options.
+Note that the HTTP header is only sent if you don't use a page caching plugin. To send the HTTP header and continue to use a caching plugin, add the header at the server level. See http://www.gnuterrypratchett.com/ for options.
 
 = Checking the meta tag is being added =
 You can check that the meta tag is visible by viewing your site's HTML source and searching for “GNU Terry Pratchett”.
@@ -63,6 +63,9 @@ From Going Postal:
 In Going Postal, the G means that the message should be passed on, the N means “Not Logged”, and the U means that it should be turned around at the end of the line.
 
 == Changelog ==
+
+= 0.3.2 =
+* Small PHP and readme docs adjustments.
 
 = 0.3.1 =
 * Add text domain to allow for readme translation.
