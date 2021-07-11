@@ -1,7 +1,7 @@
 <?php
 /**
 * Plugin Name: GNU Terry Pratchett
-* Version: 0.3.1
+* Version: 0.3.2
 * Plugin URI: https://github.com/nickcernis/gnu-terry-pratchett
 * Description: Adds an X-Clacks-Overhead HTTP header set to 'GNU Terry Pratchett' on all non-admin pages.
 * Author: Nick Cernis
