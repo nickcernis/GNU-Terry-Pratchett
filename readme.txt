@@ -2,7 +2,7 @@
 Contributors: modernnerd
 Tags: terry-pratchett, http-headers
 Requires at least: 4.6
-Tested up to: 5.8
+Tested up to: 5.9
 Stable tag: 0.3.2
 License: gpl-2.0-or-later
 
