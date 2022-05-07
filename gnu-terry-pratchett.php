@@ -12,6 +12,9 @@
 * @package gnu-terry-pratchett
 */
 
+include_once __DIR__ . '/options.php';
+new GNUTerryPratchettOptions();
+
 add_filter( 'wp_headers', 'gnu_terry_pratchett_header' );
 /**
  * Adds X-Clacks-Overhead HTTP header.
@@ -20,7 +23,8 @@ add_filter( 'wp_headers', 'gnu_terry_pratchett_header' );
  * @return array The modified list of headers.
  */
 function gnu_terry_pratchett_header( $headers ) {
-	$headers['X-Clacks-Overhead'] = 'GNU Terry Pratchett';
+	$plugin_options = get_option( 'gnu_terry_pratchett' );
+	$headers['X-Clacks-Overhead'] = $plugin_options['header'];
 
 	return $headers;
 }
@@ -34,5 +38,6 @@ add_action( 'wp_head', 'gnu_terry_pratchett_meta' );
  * filter does not run if page caching is active.
  */
 function gnu_terry_pratchett_meta() {
-	echo '<meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />';
+	$plugin_options = get_option( 'gnu_terry_pratchett' );
+	echo "<meta http-equiv=\"X-Clacks-Overhead\" content=\"{$plugin_options['header']}\" />";
 }
