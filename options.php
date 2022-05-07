@@ -6,8 +6,6 @@
  */
 
 class GNUTerryPratchettOptions {
-	private $options;
-
 	public function __construct() {
 		register_setting(
 			'gnu_terry_pratchett_options',
@@ -20,8 +18,6 @@ class GNUTerryPratchettOptions {
 
 		add_action( 'admin_menu', [ $this, 'gnu_terry_pratchett_add_options_page' ] );
 		add_action( 'admin_init', [ $this, 'gnu_terry_pratchett_options_page_init' ] );
-
-        $this->options = get_option( 'gnu_terry_pratchett' );
 	}
 
 	public function gnu_terry_pratchett_add_options_page() {
@@ -78,8 +74,9 @@ class GNUTerryPratchettOptions {
 	}
 
 	public function header_field() {
-		$header = isset( $this->options['header'] )
-					? esc_attr( $this->options['header'])
+		$options = get_option( 'gnu_terry_pratchett' );
+		$header  = isset( $options['header'] )
+					? esc_attr( $options['header'])
 					: '';
 
 		echo "<input
