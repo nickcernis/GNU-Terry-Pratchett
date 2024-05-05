@@ -3,7 +3,7 @@ Contributors: modernnerd
 Tags: terry-pratchett, http-headers
 Requires at least: 4.6
 Tested up to: 6.5
-Stable tag: 0.4.0
+Stable tag: 0.4.1
 License: gpl-2.0-or-later
 
 Add an X-Clacks-Overhead header with “GNU Terry Pratchett” to all non-admin pages.
@@ -71,6 +71,9 @@ From Going Postal:
 In Going Postal, the G means that the message should be passed on, the N means “Not Logged”, and the U means that it should be turned around at the end of the line.
 
 == Changelog ==
+
+= 0.4.1 =
+* Escape attributes on settings page and meta tag.
 
 = 0.4.0 =
 * Add settings page at Settings → GNU Terry Pratchett to let you adjust or extend the X-Clacks-Overhead header.
