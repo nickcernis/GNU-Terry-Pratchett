@@ -39,5 +39,5 @@ add_action( 'wp_head', 'gnu_terry_pratchett_meta' );
  */
 function gnu_terry_pratchett_meta() {
 	$plugin_options = get_option( 'gnu_terry_pratchett' );
-	echo "<meta http-equiv=\"X-Clacks-Overhead\" content=\"{$plugin_options['header']}\" />";
+	echo '<meta http-equiv="X-Clacks-Overhead" content="' . esc_attr( $plugin_options['header'] ) . '" />';
 }

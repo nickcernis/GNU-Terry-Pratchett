@@ -79,12 +79,12 @@ class GNUTerryPratchettOptions {
 					? esc_attr( $options['header'])
 					: '';
 
-		echo "<input
-				class=\"regular-text\"
-				type=\"text\"
-				name=\"gnu_terry_pratchett[header]\"
-				id=\"header\"
-				value=\"{$header}\">";
+		echo '<input
+            class="regular-text"
+            type="text"
+            name="gnu_terry_pratchett[header]"
+            id="header"
+            value="' . esc_attr( $header ) . '">';
 
         echo '<p>' . esc_html__( 'A comma-separated list of names to honor.', 'gnu-terry-pratchett' ) . '</p>';
 	}
