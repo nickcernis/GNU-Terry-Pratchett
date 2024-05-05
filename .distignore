@@ -1,2 +1,6 @@
 /.wordpress-org
 /.github
+.gitignore
+composer.json
+composer.lock
+phpcs.xml
