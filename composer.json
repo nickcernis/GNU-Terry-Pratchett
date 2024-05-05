@@ -24,6 +24,9 @@
     "config": {
         "allow-plugins": true
     },
+    "extra": {
+        "installer-name": "gnu-terry-pratchett"
+    },
     "scripts": {
         "lint": [
             "vendor/bin/phpcs"
