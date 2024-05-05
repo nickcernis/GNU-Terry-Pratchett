@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== GNU Terry Pratchett ===
 Contributors: modernnerd
 Tags: terry-pratchett, http-headers
 Requires at least: 4.6
