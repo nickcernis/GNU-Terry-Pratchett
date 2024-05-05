@@ -42,8 +42,8 @@ class GNUTerryPratchettOptions {
 				?>
 			</form>
 		</div>
-	    <?php
-    }
+		<?php
+	}
 
 	public function gnu_terry_pratchett_options_page_init() {
 		add_settings_section(
@@ -76,7 +76,7 @@ class GNUTerryPratchettOptions {
 	public function header_field() {
 		$options = get_option( 'gnu_terry_pratchett' );
 		$header  = isset( $options['header'] )
-					? esc_attr( $options['header'])
+					? esc_attr( $options['header'] )
 					: '';
 
 		echo '<input
@@ -86,6 +86,6 @@ class GNUTerryPratchettOptions {
             id="header"
             value="' . esc_attr( $header ) . '">';
 
-        echo '<p>' . esc_html__( 'A comma-separated list of names to honor.', 'gnu-terry-pratchett' ) . '</p>';
+		echo '<p>' . esc_html__( 'A comma-separated list of names to honor.', 'gnu-terry-pratchett' ) . '</p>';
 	}
 }

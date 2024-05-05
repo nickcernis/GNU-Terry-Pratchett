@@ -12,7 +12,7 @@
 * @package gnu-terry-pratchett
 */
 
-include_once __DIR__ . '/options.php';
+require_once __DIR__ . '/options.php';
 new GNUTerryPratchettOptions();
 
 add_filter( 'wp_headers', 'gnu_terry_pratchett_header' );
